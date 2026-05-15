@@ -168,7 +168,7 @@ with col4:
     """, unsafe_allow_html=True)
 
 # --- Display Data ---
-st.markdown('<div class="subheader-modern">📋 Latest Orders</div>', unsafe_allow_html=True)
+st.markdown('<div class="subheader-modern"> Latest Orders</div>', unsafe_allow_html=True)
 st.dataframe(df, use_container_width=True, hide_index=True)
 
 
@@ -178,7 +178,7 @@ st.markdown('<div class="subheader-modern">� Beauty Products Performance</div>
 chart_col1, chart_col2 = st.columns(2)
 
 with chart_col1:
-    st.markdown('<div style="text-align: center; margin-bottom: 20px;"><h3 style="color: #C25A7B;">💄 Sales by Product</h3></div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: center; margin-bottom: 20px;"><h3 style="color: #C25A7B;"> Sales by Product</h3></div>', unsafe_allow_html=True)
     fig = px.bar(
         df, 
         x='product', 
@@ -199,7 +199,7 @@ with chart_col1:
     st.plotly_chart(fig, use_container_width=True)
 
 with chart_col2:
-    st.markdown('<div style="text-align: center; margin-bottom: 20px;"><h3 style="color: #C25A7B;">🌆 Sales by City</h3></div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: center; margin-bottom: 20px;"><h3 style="color: #C25A7B;"> Sales by City</h3></div>', unsafe_allow_html=True)
     region_data = df.groupby("region")["total_sales"].sum().reset_index()
     fig2 = px.pie(
         region_data, 
