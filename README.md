@@ -50,7 +50,3 @@ python simulate_sales.py
 
 ![Dashboard screenshot 2](asstes/deashboard_2.png)
 
-## Notes
-
-- The image files are stored in the `asstes/` directory, so the README uses relative image links.
-- If you rename the assets folder, update the image paths in this README.
