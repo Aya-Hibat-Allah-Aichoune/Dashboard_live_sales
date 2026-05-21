@@ -1,6 +1,6 @@
 # Beauty Sales Dashboard
 
-A modern, feminine Streamlit dashboard for tracking beauty product sales in real time.
+A dashboard for tracking beauty product sales in real time.
 
 ## Overview
 
